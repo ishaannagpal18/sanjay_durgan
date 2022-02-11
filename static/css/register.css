@@ -1,0 +1,107 @@
+
+    html,body {
+height: 100%;
+}
+#header {
+  position: fixed;
+  top: 0;
+transition: all 0.5s;
+z-index: 997;
+padding: 15px 0;
+background-color: #fff;
+top: 0;
+box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+}
+.global-container{
+  background-size: cover;
+  background: url("../img/bg4.jpg") top center;
+height:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.global-container1{
+  height:110%;
+}
+
+form{
+padding-top: 10px;
+font-size: 14px;
+margin-top: 30px;
+}
+
+.card-title{ font-weight:600; font-size:250%; color: black;}
+
+.btn{
+font-size: 14px;
+margin-top:20px;
+}
+
+
+.login-form {
+width: 330px;
+margin: 20px;
+background: rgba(255, 255, 255, 0);
+}
+.register-form{
+  width:60%;
+  margin:20px;
+  background: rgba(255, 255, 255, 0);
+  position:absolute;
+  right:1%;
+  top: 10%;
+}
+
+.sign-up{
+text-align:center;
+padding:20px 0 0;
+font-weight:600;
+color: black;
+font-size: 120%;
+}
+
+.alert{
+margin-bottom:-30px;
+font-size: 13px;
+margin-top:20px;
+z-index: 10000;
+}
+.btn-login:hover{
+  background-color: #cda45e;
+  border: #cda45e;
+}
+.btn-login{
+  background-color: #b8a07e;
+  border: #b8a07e;
+}
+a:hover{
+  color:#cda45e;
+}
+a{
+  color:#b8a07e;
+}
+.login-label{
+  font-weight: 600;
+  color:black;
+  margin-bottom: 1%;
+}
+.login-input{
+  font-size: 110%;
+}
+.card-text1{
+  color:black;
+  font-weight:600;
+   font-size:120%;
+}
+.form-group {
+margin-bottom: 1rem;
+}
+.btn-block {
+display: block;
+width: 100%;
+}
+@media screen and (max-width:550px){
+  .register-form{
+    width:90%;
+  }
+}

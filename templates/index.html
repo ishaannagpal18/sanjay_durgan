@@ -9,7 +9,7 @@ Home
 
   <div class="container">
     <div class="hero-content">
-      <h1>I'm <span class="typed" data-typed-items="Sanjay Durgan,  Personal Finance Veteran"></span></h1>
+      <h1>I'm <span class="typed" data-typed-items="Sanjay Durgan, A Personal Finance Veteran"></span></h1>
       <p>With 18+ Years of Experience </p>
       <center>
       <ul class="list-unstyled list-social">
@@ -39,8 +39,10 @@ Home
         <div class="col-lg-7">
           <div class="about-descr">
 
-            <p class="p-heading">im a ux /ui designer austin based who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
-            <p class="separator">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.English person.</p>
+            <p class="p-heading">Founder of AbunDanze, with experience of 18+ years to manage the financial assets and goals of hundreds of clients across 7 countries.
+</p>
+            <p class="separator">His first entrepreneurship milestone was in 1995 as the Co-founder of Laughing Buddha Computers and then started his own company in 2002 with funds gained by his investment during his college days. He is certified by the Financial Planning Standards Board (FPSB) as Financial Professional in 2003. He also became CFP certified in 2006. He trained the first batch of professionals at the International College of Financial Planning, New Delhi. Currently working and exploring new edges of AbunDanze like Behaviour Science and Responsible Investing, and researching about the financial reset and disruption after the global pandemic.
+</p>
 
           </div>
 
@@ -50,7 +52,7 @@ Home
   </div><!-- End About Section -->
 
   <!-- ======= Services Section ======= -->
-  <div id="services">
+  <!-- <div id="services">
     <div class="container">
 
       <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -64,7 +66,7 @@ Home
             </div>
           </div><!-- End testimonial item -->
 
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <div class="services-block">
               <i class="bi bi-card-checklist"></i>
               <span>BRAND IDENTITY</span>
@@ -72,7 +74,7 @@ Home
             </div>
           </div><!-- End testimonial item -->
 
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <div class="services-block">
               <i class="bi bi-bar-chart"></i>
               <span>WEB DESIGN</span>
@@ -80,7 +82,7 @@ Home
             </div>
           </div><!-- End testimonial item -->
 
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <div class="services-block">
               <i class="bi bi-binoculars"></i>
               <span>MOBILE APPS</span>
@@ -88,7 +90,7 @@ Home
             </div>
           </div><!-- End testimonial item -->
 
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <div class="services-block">
               <i class="bi bi-brightness-high"></i>
               <span>Analytics</span>
@@ -96,7 +98,7 @@ Home
             </div>
           </div><!-- End testimonial item -->
 
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <div class="services-block">
               <i class="bi bi-calendar4-week"></i>
               <span>PHOTOGRAPHY</span>
@@ -104,7 +106,7 @@ Home
             </div>
           </div><!-- End testimonial item -->
 
-        </div>
+        <!-- </div>
         <div class="swiper-pagination"></div>
       </div>
 
@@ -113,7 +115,7 @@ Home
   </div><!-- End Services Section -->
 
   <!-- ======= Portfolio Section ======= -->
-  <div id="portfolio" class="paddsection">
+  <!-- <div id="portfolio" class="paddsection">
 
     <div class="container">
       <div class="section-title text-center">
@@ -207,7 +209,7 @@ Home
 
     <div class="container">
       <div class="section-title text-center">
-        <h2>journal</h2>
+        <h2>Blogs</h2>
       </div>
     </div>
 
@@ -218,12 +220,13 @@ Home
           <div class="col-lg-4 col-md-6">
             <div class="journal-info">
 
-              <a href="blog-single.html"><img src="{% static 'img/blog-post-1.jpg'%}" class="img-responsive" alt="img"></a>
+              <a href="{% url 'blog1'%}"><img src="{% static 'img/budget1.jpg'%}" class="img-responsive" alt="img"></a>
 
               <div class="journal-txt">
-
-                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
+                <center>
+                <h4><a href="{% url 'blog1'%}">BUDGET 2012</a></h4></center>
+                <p class="separator">The three primary concerns for this year’s budget were putting India back on
+the <b>growth</b> trajectory, <b>fiscal consolidation</b> and moderating <b>inflation</b>.
                 </p>
 
               </div>
@@ -234,12 +237,13 @@ Home
           <div class="col-lg-4 col-md-6">
             <div class="journal-info">
 
-              <a href="blog-single.html"><img src="{% static 'img/blog-post-2.jpg'%}" class="img-responsive" alt="img"></a>
+              <a href="{% url 'blog2'%}"><img src="{% static 'img/inflation.jpg'%}" class="img-responsive" alt="img"></a>
 
               <div class="journal-txt">
-
-                <h4><a href="blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
+                <center>
+                <h4><a href="{% url 'blog2'%}">INFLATION, INFLATION, INFLATION</a></h4></center>
+                <p class="separator">Inflation..inflation..inflation when do we respite from thee? No not now, not too soon has
+been the refrain since March 2010.
                 </p>
 
               </div>
@@ -250,12 +254,13 @@ Home
           <div class="col-lg-4 col-md-6">
             <div class="journal-info">
 
-              <a href="blog-single.html"><img src="{% static 'img/blog-post-3.jpg'%}" class="img-responsive" alt="img"></a>
+              <a href="{% url 'blog3'%}"><img src="{% static 'img/whither1.jpg'%}" class="img-responsive" alt="img"></a>
 
               <div class="journal-txt">
-
-                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
+                <center>
+                <h4><a href="{% url 'blog3'%}">WHITHER MARKETS?</a></h4></center>
+                <p class="separator">Whither Markets? To what place, end or purpose? Take me wherever, whatever....I
+have no purpose!
                 </p>
 
               </div>
@@ -281,55 +286,33 @@ Home
               <h2 class="mb-30">GET IN TOUCH</h2>
 
               <ul class="contact-details">
-                <li><span>23 Main, Street</span></li>
-                <li><span>New York, United States</span></li>
-                <li><span>+88 01912704287</span></li>
-                <li><span>example@example.com</span></li>
+                <li><a href="tel:+918700197726"><span>+91 8700197726</span></a></li>
+                <li><a href="mailto:infofunds@gmail.com"><span>infofunds@gmail.com</span></a></li>
               </ul>
 
             </div>
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row gy-3">
-
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <div class="mt-0">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                </div>
-
+            <form action="/contactus/" method="POST" >
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
               </div>
-            </form>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+            </div>
+
+            <div class="text-center"><button class="button" type="submit">Send Message</button></div>
+          </form>
           </div>
         </div>
       </div>

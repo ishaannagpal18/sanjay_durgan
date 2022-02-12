@@ -1,0 +1,132 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Whither Markets
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Blog Single ======= -->
+  <div class="main-content paddsection">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            <div class="container-main single-main">
+              <div class="col-md-12">
+                <div class="block-main mb-30">
+                  <img src="{% static 'img/whither.jpg'%}" class="img-responsive" alt="reviews2">
+                  <div class="content-main single-post padDiv">
+                    <div class="journal-txt">
+                      <h4><a href="#">Whither Markets?</a></h4>
+                    </div>
+                    <div class="post-meta">
+                      <ul class="list-unstyled mb-0">
+                        <li class="author">by:<a href="#">Sanjay Durgan</a></li>
+                        <li class="date">date:<a href="#">July 23, 2011</a></li>
+                        <li class="commont"><i class="ion-ios-heart-outline"></i><a href="#">3 Comments</a></li>
+                      </ul>
+                    </div>
+                    <p class="mb-30">Whither Markets? To what place, end or purpose? Take me wherever, whatever....I
+have no purpose! Such has been the confusion over the last one and a half years or so
+that the markets have been....directionless, clueless and with no sense of where to go.</p>
+                    <p class="mb-30">The period has been plagued by debt worries in the euro-zone, US economy concerns
+and by numerous scandals on the domestic front. The corruption scandals along with
+the civil society movement have forced the government into a state of inertia, unable to
+undertake any major policy initiative on the reform front.</p>
+<p class="mb-30">Inflationary concerns along with rising oil prices have only added to the global economic
+woes. Despite the RBI increasing rates by 10-times over the last 15-months, there seem
+to be no respite on the inflationary front.</p>
+                    <blockquote><li>Structural problems in the areas of storage, procurement &amp; supply system, and a
+broken food distribution system continue to be a major constraint in fighting
+inflation. The government effort to control inflation (on the demand side, while
+supply side problems continue) seems to be self-defeating.</li><br>
+<li> While food inflation continues to behave stubbornly, the GDP growth rate is
+slowing down. Amidst slowing industrial output, the government has scaled down
+the GDP growth projections for 2011-12 to 8.6% from the earlier estimate of 9%
+declared in the budget.</li><br>
+</blockquote>
+                    <p class="mb-30">In the light of the above, it seems only natural for the markets to have been range-
+bound and with no purpose. Indian investors have been lapping up debt products to
+enhance returns on a portfolio where equity returns at best have been tepid. Given
+below is the summary of what has been happening with the Nifty over this period-</p>
+<blockquote><li>Nifty has traded between 5200 and 6200 levels for most part of the period
+between January 2010 and till date.</li><br>
+<li> Briefly trading between 4800 - 4900 plus levels in Feb’ 2010.</li><br>
+<li>Peaked at 6301.55 on 9 Nov 2010. Sustaining 6000 + levels till 2 Jan 2011 and
+then correcting to 5225.80 on 9 Feb 2011.</li><br>
+<li> Recovery to 5911.50 by 12 April 2011 and the strong resistance sees the Nifty
+correct to 5257.90 by 20 June 2011.</li><br>
+</blockquote>
+<p class="mb-30">With Nifty being range bound between 5200 and 5900 levels, market participants see
+these levels as a strong support and resistance levels to watch out for before the market
+is able to establish a clear direction.<br>
+We can look at the Indian markets from two primary driving forces...It’s</p>
+<blockquote><li>fundamentals i.e. GDP growth rates &amp; other macro-economic indicators and</li><br>
+<li> sentiments i.e., demand / supply factor. Fund flows from FIIs are far greater than
+domestic flows and can influence market direction purely on global sentiments.</li><br>
+</blockquote>
+<p class="mb-30">Though growth projections may be scaled down, India would still be amongst the few
+economies across the globe to have growth rates of 7% plus over a prolonged period of
+time. Looked at from a long term perspective, equity would still be the story to bet on.</p>
+<blockquote><li>Global capital flows outnumber domestic flows into the capital market by a huge
+margin. FII flows in India will therefore continue to play an important role in the
+near future.</li><br>
+<li> Looked at purely from a demand-supply perspective, FII numbers will define the
+trend in the short-term. Their views on global trends and on India will define the
+fund flows and the sentiments thus prevailing will dominate the markets in the
+months to come.</li><br>
+</blockquote>
+<p class="mb-30">Markets thus need to break out of the range bound movement to establish a clear trend.
+From a valuation perspective the markets are neither cheap nor expensive; Sensex
+trades at around 15.2 times it estimated earnings and is close to its historical average.<br>
+Inflation and the rising rates remain a cause of concern for the domestic market. Global
+macro-economic headwinds still remain and are a cause of worry for the short-term.</p>
+<p class="mb-30">The refreshing breather has been the Eurozone Summit held on July 21st. The
+European leaders agreed to a new rescue package for Greece that seeks to balance
+the interest of all parties concerned. The leaders agreed to swap privately held bonds
+into 15- and 30- year debt where the principal is “almost completely collateralized” thus
+averting a collapse of the euro region.</p>
+<p class="mb-30">These are positive developments for the market. The markets however, need to break
+out above their resistance levels on a sustainable basis to bring back investor
+confidence.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="cmt padDiv">
+                  <form action="/contactus/" method="POST" >
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                  </div>
+
+                  <div class="text-center"><button class="button" type="submit">Send Message</button></div>
+                </form>
+                        <!-- <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                      </div>
+                    </div>
+                  </form> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Blog Single -->
+
+</main><!-- End #main -->
+{% endblock %}

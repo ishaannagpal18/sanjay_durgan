@@ -11,3 +11,12 @@ def home(request):
     #
     # diction={'about':aboutdata, 'slider':sliderdata,'clients':clientsdata, 'portfolio':portfoliodata}
     return render(request,'index.html')
+
+def blog1(request):
+    return render(request,'blog1.html')
+
+def blog2(request):
+    return render(request,'blog2.html')
+
+def blog3(request):
+    return render(request,'blog3.html')

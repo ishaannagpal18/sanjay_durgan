@@ -1,0 +1,96 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Budget 2012
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Blog Single ======= -->
+  <div class="main-content paddsection">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            <div class="container-main single-main">
+              <div class="col-md-12">
+                <div class="block-main mb-30">
+                  <img src="{% static 'img/budget.jpg'%}" class="img-responsive" alt="reviews2">
+                  <div class="content-main single-post padDiv">
+                    <div class="journal-txt">
+                      <h4><a href="#">Budget 2012</a></h4>
+                    </div>
+                    <div class="post-meta">
+                      <ul class="list-unstyled mb-0">
+                        <li class="author">by:<a href="#">Sanjay Durgan</a></li>
+                        <li class="date">date:<a href="#">March 31, 2012</a></li>
+                        <li class="commont"><i class="ion-ios-heart-outline"></i><a href="#">3 Comments</a></li>
+                      </ul>
+                    </div>
+                    <p class="mb-30">The three primary concerns for this year’s budget were putting India back on
+the <b>growth</b> trajectory, <b>fiscal consolidation</b> and moderating <b>inflation</b>. Given the compulsions
+of governance, the budget did make an attempt to meet these objectives though doubts
+remain on the government’s ability to meet its target. A sense of general disappointment,
+though there was a little of everything for everyone.</p>
+                    <p class="mb-30">The budget provided a comprehensive incentive package for the <b>power sector</b> at large and a
+slew of measures to kick start the reform process in the <b>infrastructure</b> sector. Government
+doubles the limit for Infrastructure Tax Free Bonds to Rs 60,000 crore.</p>
+                    <blockquote><li>The fiscal deficit for 2011‐12 is pegged at 5.9% and as per market estimates it may
+not be much lower in 2012‐13. Concerns on the fiscal front would continue to plague
+the economy thus inhibiting RBI from adopting aggressive rate cuts to foster the
+much needed investment cycle to accelerate growth.</li><br>
+<li> After having grown at 8.4% in the preceding two years GDP growth for FY11-12 is
+expected at 6.9%, deceleration in industrial growth being the primary reason for the
+slowing growth. FY12-13 GDP growth is now projected at 7.6% (+/- 0.25%) and Fiscal
+Deficit at 5.1% of GDP.</li><br>
+<li> Government’s endeavour is to keep central subsidies under 2% of GDP for FY12-13
+and to bring it further down to 1.75% of the GDP over the next 3 years. No-win
+situation for the govt.</li><br>
+<li> Current account deficit at 3.6% of GDP for FY11-12 continues to put pressure on the
+rupee</li></blockquote>
+                    <p class="mb-30">With too many variables at play it becomes difficult to project any clear trend going
+forward. Surging import bills can play the spoil sport to any initiatives towards controlling
+inflation and rationalizing subsidies.</p>
+<p class="mb-30">Markets have run up around 15% since the start of the year and a lot of expectations were
+being built into the macro-economic policy statement. Some consolidation in the markets
+can be expected as we go forward.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="cmt padDiv">
+                  <form action="/contactus/" method="POST" >
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                  </div>
+
+                  <div class="text-center"><button class="button" type="submit">Send Message</button></div>
+                </form>
+                        <!-- <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                      </div>
+                    </div>
+                  </form> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Blog Single -->
+
+</main><!-- End #main -->
+{% endblock %}

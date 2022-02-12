@@ -9,3 +9,14 @@ text-transform: initial;
 .hero-content .list-social li i {
 font-size: 180%;
 }
+.button{
+  background: #333;
+color: white;
+padding: 2%;
+}
+a:hover {
+color: #b8a07e;
+}
+.hero-content h1 {
+font-size: 220%;
+}

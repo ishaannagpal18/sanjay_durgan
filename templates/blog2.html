@@ -1,0 +1,109 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Inflation
+{% endblock %}
+{% block content %}
+<main id="main">
+
+  <!-- ======= Blog Single ======= -->
+  <div class="main-content paddsection">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            <div class="container-main single-main">
+              <div class="col-md-12">
+                <div class="block-main mb-30">
+                  <img src="{% static 'img/inflation1.jpg'%}" class="img-responsive" alt="reviews2">
+                  <div class="content-main single-post padDiv">
+                    <div class="journal-txt">
+                      <h4><a href="#">Inflation, inflation, inflation</a></h4>
+                    </div>
+                    <div class="post-meta">
+                      <ul class="list-unstyled mb-0">
+                        <li class="author">by:<a href="#">Sanjay Durgan</a></li>
+                        <li class="date">date:<a href="#">27 July 2011</a></li>
+                        <li class="commont"><i class="ion-ios-heart-outline"></i><a href="#">3 Comments</a></li>
+                      </ul>
+                    </div>
+                    <p class="mb-30">Inflation..inflation..inflation when do we respite from thee? No not now, not too soon has
+been the refrain since March 2010. Thus in its continued pursuit to tame inflation, RBI
+has raised the benchmark rates for the 11th time today by 50 basis points to 8 per cent.
+The more-than-expected rise spooked the markets as the Sensex fell by 353.07 points
+(1.87%) to close at 18,518.22 and Nifty fell by 105.45 points (1.86%) to close at
+5574.85.</p>
+
+                    <blockquote>Inflationary concerns have continued to dog the policymakers for quite some time now:<li>Average inflation for 2010-11 has been 9.43% – the highest in 16 years.</li><br>
+<li> Headline inflation has consistently and stubbornly remained above the 8 per cent
+mark since March 2010.</li><br>
+<li> It stood at 9.44 per cent for June 2011, much above the Central Bank’s comfort
+level of 5-6 per cent. Thus necessitating the 11th rate hike since March 2010.</li><br>
+</blockquote>
+                    <p class="mb-30">While RBI has been trying to manage the demand side of the price factor, the
+constraints on the supply side and the volatility in global oil prices has been a major
+risk... exposing the weak chink in the armor. Eleven rate hikes in less than one and half
+years speaks of a far greater malaise in our economic system than generally
+understood.</p>
+<p class="mb-30">Structural problems in the areas of storage, procurement &amp; supply system, and a
+broken food distribution system along with volatile oil prices continue to be a major
+constraint in fighting inflation. The government effort to control inflation (on the demand
+side... while supply side problems continue) seem to be self-defeating.</p>
+<blockquote>
+<li> While the GDP growth rate is slowing down, there seem to be no respite from
+headline inflation.</li><br>
+<li> Amidst slowing industrial output (5.6 per cent in May, the slowest in nine months)
+the government has scaled down the GDP growth projections for 2011-12 to 8
+per cent and revised the outlook for wholesale-price inflation for FY12 to 7% from
+6% earlier.</li><br>
+</blockquote>
+<p class="mb-30">Will it be achieved; most experts do not believe it so. Neither the scaled down growth
+projections nor the full year inflation projections are expected to be met. Growth rates of
+7.6% along with average inflation figures of 8% seem more the norm.</p>
+<p class="mb-30">Under these circumstances, along with Eurozone and US economy concerns we can
+expect highly volatile markets with sharp movements in either direction. Uncertain times
+to continue with no clear market direction established. With scaled down growth
+projections and high cost of money, investors too need to scale down return
+expectations and wait patiently till the economy turns the corner for good times ahead.
+Till then growth concerns have definitely taken a back seat in India’s quest for double
+digit growth path.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="cmt padDiv">
+                  <form action="/contactus/" method="POST" >
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                  </div>
+
+                  <div class="text-center"><button class="button" type="submit">Send Message</button></div>
+                </form>
+                        <!-- <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                      </div>
+                    </div>
+                  </form> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Blog Single -->
+
+</main><!-- End #main -->
+{% endblock %}

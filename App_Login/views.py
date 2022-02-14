@@ -91,7 +91,7 @@ def login_attempt(request):
             return HttpResponseRedirect(reverse('App_Login:login_attempt'))
 
         login(request , user)
-        return HttpResponseRedirect(reverse('home'))
+        return HttpResponseRedirect(reverse('auditorium'))
 
     return render(request , 'App_Login/login.html')
 

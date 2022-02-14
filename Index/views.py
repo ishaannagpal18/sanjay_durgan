@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def home(request):
@@ -20,3 +20,7 @@ def blog2(request):
 
 def blog3(request):
     return render(request,'blog3.html')
+
+@login_required(login_url='/account/login')
+def auditorium(request):
+    return render(request,'auditorium.html')

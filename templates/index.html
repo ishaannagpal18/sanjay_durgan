@@ -10,16 +10,27 @@ Home
   <div class="container">
     <div class="hero-content">
       <h1>I'm <span class="typed" data-typed-items="Sanjay Durgan, A Personal Finance Veteran"></span></h1>
-      <p>With 18+ Years of Experience </p>
-      <center>
-      <ul class="list-unstyled list-social">
-        <li><a href="https://twitter.com/DurganSanjay?t=uYDPRoDa5komvr_pOJ1FmQ&s=08" target="_blank"><i class="bi bi-twitter"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/sanjaydurgan" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-      </ul>
-      </center>
-    </div>
-  </div>
-</div><!-- End Hero -->
+      <div class="row">
+        <div class="col-md-4">
+          <p>With 18+ Years of Experience </p>
+          <ul class="list-unstyled list-social">
+            <li><a href="https://twitter.com/DurganSanjay?t=uYDPRoDa5komvr_pOJ1FmQ&s=08" target="_blank"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sanjaydurgan" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <a href="{% url 'auditorium' %} "class=" play-btn"></a>
+        </div>
+      </div>
+
+
+          </div>
+        </div>
+
+
+          </div>
+
+<!-- End Hero -->
 
 <main id="main">
 
@@ -31,7 +42,8 @@ Home
         <div class="col-lg-4 ">
           <div class="div-img-bg">
             <div class="about-img">
-              <img src="{% static 'img/me.jpg'%} " class="img-responsive" alt="me">
+              <img src="{% static 'img/about2.jpeg'%} " class="img-responsive" alt="me"><br>
+              <h4 class="quote">The time is ripe to stop rowing...</h4>
             </div>
           </div>
         </div>
@@ -205,10 +217,9 @@ Home
   </div><!-- End Portfolio Section -->
 
   <!-- ======= Journal Section ======= -->
-  <div id="journal" class="text-left paddsection">
-
+  <div id="journal" class="text-left ">
     <div class="container">
-      <div class="section-title text-center">
+      <div class="section-title text-center" id="slider-text">
         <h2>Blogs</h2>
       </div>
     </div>
@@ -273,7 +284,118 @@ have no purpose!
     </div>
 
   </div><!-- End Journal Section -->
+  <div id="media" class="text-left paddsection">
+    <div class="container ">
+      <div class="section-title text-center" id="slider-text">
+        <h2>MEDIA COVERAGE</h2>
+      </div>
+    </div>
 
+    <div class="container ">
+      <div class="journal-block">
+        <div class="row">
+
+          <div class="col-lg-2 col-md-2 col-6">
+            <div class="journal-info">
+              <div class="img">
+              <a href="https://www.khaleejtimes.com/business/india-best-place-for-nri-investors-in-07" target="_blank"><img src="{% static 'img/khaleej.jpeg'%}" class="img-responsive" alt="img"></a>
+              </div>
+              <div class="journal-txt journal-txt1">
+                <center>
+                <h4><a href="https://www.khaleejtimes.com/business/india-best-place-for-nri-investors-in-07" target="_blank">India: Best place for NRI investors in ’07</a></h4></center>
+                <p class="separator">NEW DELHI — In 2007, where can NRIs get the best returns for their investments in stocks? The quick answer is...
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-6">
+            <div class="journal-info ">
+              <div class="img">
+              <a href="https://gulfnews.com/business/markets/nris-look-to-emerging-markets-1.153184" target="_blank"><img src="{% static 'img/gulf.jpeg'%}" class="img-responsive" alt="img"></a>
+              </div>
+              <div class="journal-txt journal-txt1">
+                <center>
+                <h4><a href="https://gulfnews.com/business/markets/nris-look-to-emerging-markets-1.153184" target="_blank">NRIs look to emerging markets</a></h4></center>
+                <p class="separator">In 2007, where can NRIs get the best returns for their investments in stocks? The quick answer is, in the Bric...
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-6">
+            <div class="journal-info">
+              <div class="img">
+                <center>
+              <a href="https://www.hindustantimes.com/business/post-budget-nris-have-to-spend-more-in-india/story-metJrO1GOTfCSns25jbwEP.html" target="_blank"><img src="{% static 'img/hindustan.jpeg'%}" class="img-responsive" alt="img"></a>
+              </center>
+              </div>
+              <div class="journal-txt journal-txt1">
+                <center>
+                <h4><a href="https://www.hindustantimes.com/business/post-budget-nris-have-to-spend-more-in-india/story-metJrO1GOTfCSns25jbwEP.html" target="_blank">Post-budget, NRIs have to spend more in India</a></h4></center>
+                <p class="separator">Non-residents Indians (NRIs) will have to spend a little more on their visits to India after the latest budget...
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-6">
+            <div class="journal-info">
+              <div class="img">
+              <a href="https://www.hollywoodreporter.com/business/business-news/asian-media-withstands-market-slide-131336/" target="_blank"><img src="{% static 'img/hollywood.jpeg'%}" class="img-responsive" alt="img"></a>
+              </div>
+              <div class="journal-txt journal-txt1">
+                <center>
+                <h4><a href="https://www.hollywoodreporter.com/business/business-news/asian-media-withstands-market-slide-131336/" target="_blank">Asian media withstands market slide</a></h4></center>
+                <p class="separator">BEIJING -- Asian media companies are watching cautiously for aftershocks from the recent global market drop, but most...
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-6">
+            <div class="journal-info">
+              <div class="img">
+                <a href="https://www.indiansinkuwait.com/news/print/9744" target="_blank"><img src="{% static 'img/indian.jpeg'%}" class="img-responsive" alt="img"></a>
+              </div>
+
+
+              <div class="journal-txt journal-txt1">
+                <center>
+                <h4><a href="https://www.indiansinkuwait.com/news/print/9744" target="_blank">Post-budget, NRIs have to spend more in India</a></h4></center>
+                <p class="separator">Non-residents Indians (NRIs) will have to spend a little more on their visits to India after the latest budget. As the air...
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-6">
+            <div class="journal-info">
+              <div class="img">
+              <a href="https://www.livemint.com/Money/RLCeoqwUN6JPdVAMzXLdHK/Do-balanced-funds-belong-in-your-portfolio.html" target="_blank"><img src="{% static 'img/mint.jpeg'%}" class="img-responsive" alt="img"></a>
+              </div>
+              <div class="journal-txt journal-txt1">
+                <center>
+                <h4><a href="https://www.livemint.com/Money/RLCeoqwUN6JPdVAMzXLdHK/Do-balanced-funds-belong-in-your-portfolio.html" target="_blank">Do balanced funds belong in your portfolio?</a></h4></center>
+                <p class="separator">When it comes to investing in mutual funds (MFs), there are plenty of products to choose from. One product that caters not only...
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <!-- ======= Contact Section ======= -->
   <div id="contact" class="paddsection">
     <div class="container">
@@ -320,4 +442,8 @@ have no purpose!
   </div><!-- End Contact Section -->
 
 </main><!-- End #main -->
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/main1.js'%} "></script>
 {% endblock %}
